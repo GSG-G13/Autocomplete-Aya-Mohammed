@@ -4,10 +4,64 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/9a8ddb3d78.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="./css/style.css" />
     <title>AutoComplete</title>
   </head>
   <body>
+    <div class="overlay"></div>
+    <header>
+      <div class="logo">
+        <img src="./img/logol.jpg" alt="" />
+      </div>
+      <h1>League of legends</h1>
+    </header>
+    <section class="content">
+      <div class="image"></div>
+      <form action="/search" method="post">
+        <input
+          type="search"
+          name="champion"
+          id="champion"
+          placeholder="Search here..."
+        />
+        <ul class="list">
+          <li> <!-- Dom -->
+            <span>Aatrox</span>
+            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </li>
+          <li>
+            <span>Ahri</span>
+            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </li>
+          <li>
+            <span>Akali</span>
+            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </li> <!-- Dom -->
+        </ul>
+      </form>
+    </section>
+    <div class="popup">
+      <i class="fa-solid fa-xmark" id="close"></i>
+      <div class="image">
+        <img
+          src="https://ddragon.leagueoflegends.com/cdn/12.5.1/img/champion/Aatrox.png"
+          alt=""
+        />
+      </div>
+      <h2 class="name">Aatrox</h2>
+      <h3 class="title">the Darkin Blade</h3>
+      <div class="box">Attack:8,Defense:4,Magic:3</div>
+      <p class="details">
+        Once honored defenders of Shurima against the Void, Aatrox and his
+        brethren would eventually become an even greater threat to Runeterra,
+        and were defeated only by cunning mortal sorcery. But after centuries of
+        imprisonment, Aatrox was the first to find...
+      </p>
+    </div>
     <script src="./js/script.js"></script>
   </body>
 </html>

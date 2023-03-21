@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+}
+
+.overlay {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: none; /*comment*/
+}
+
+header {
+  padding: 15px 40px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #091B27;
+  color: #D0AD63;
+  box-shadow: 3px 3px 10px #aaa;
+}
+
+header .logo img {
+  width: 60px;
+  height: 60px;
+}
+
+.content .image {
+  width: 100vw;
+  height: 180px;
+  background-image: url("../img/backg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+}
+
+form {
+  width: 400px;
+  padding: 40px;
+  margin: auto;
+}
+
+form input {
+  width: 100%;
+  padding: 8px 15px;
+  font-size: 20px;
+  border: none;
+  outline: none;
+  border: 2px solid #091B27;
+}
+
+.list li {
+  width: 100%;
+  padding: 5px 10px;
+  font-size: 18px;
+  border-bottom: 2px solid #eee;
+  border-left: 2px solid #091B27;
+  border-right: 2px solid #091B27;
+  background-color: #091B27;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.list li span {
+  color: #D0AD63;
+}
+
+.list li i {
+  cursor: pointer;
+  color: #D0AD63;
+  transition: 0.5s;
+}
+
+.list li i:hover {
+  transform: scale(1.1);
+}
+
+.popup {
+  width: 70%;
+  padding: 20px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #091B27;
+  color: #D0AD63;
+  box-shadow: 10px 10px 20px #333, -10px -10px 20px #333;
+  z-index: 100;
+  text-align: center;
+  display: none; /*comment*/
+}
+
+.popup .image img {
+  width: 120px;
+  height: 120px;
+}
+
+.popup .title {
+  margin: 10px 0;
+}
+
+.popup .box {
+  width: fit-content;
+  padding: 5px;
+  border: 2px solid #D0AD63;
+  margin: auto;
+}
+
+.popup .details {
+  margin-top: 10px;
+}
+
+.popup #close {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  font-size: 20px;
+  background-color: #D0AD63;
+  color: #091B27;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  cursor: pointer;
+}
