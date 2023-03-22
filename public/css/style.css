@@ -12,18 +12,18 @@ ul {
   list-style: none;
 }
 
-a{
+a {
   text-decoration: none;
 }
 
 .overlay {
   position: absolute;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   left: 0;
   top: 0;
   background-color: rgba(0, 0, 0, 0.7);
-  display: none; /*comment*/
+  display: none;
 }
 
 header {
@@ -31,8 +31,8 @@ header {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  background-color: #091B27;
-  color: #D0AD63;
+  background-color: #091b27;
+  color: #d0ad63;
   box-shadow: 3px 3px 10px #aaa;
 }
 
@@ -62,7 +62,12 @@ form input {
   font-size: 20px;
   border: none;
   outline: none;
-  border: 2px solid #091B27;
+  border: 2px solid #091b27;
+}
+
+.list {
+  height: 260px;
+  overflow: auto;
 }
 
 .list li {
@@ -70,21 +75,21 @@ form input {
   padding: 5px 10px;
   font-size: 18px;
   border-bottom: 2px solid #eee;
-  border-left: 2px solid #091B27;
-  border-right: 2px solid #091B27;
-  background-color: #091B27;
+  border-left: 2px solid #091b27;
+  border-right: 2px solid #091b27;
+  background-color: #091b27;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 .list li span {
-  color: #D0AD63;
+  color: #d0ad63;
 }
 
 .list li i {
   cursor: pointer;
-  color: #D0AD63;
+  color: #d0ad63;
   transition: 0.5s;
 }
 
@@ -99,12 +104,12 @@ form input {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  background-color: #091B27;
-  color: #D0AD63;
+  background-color: #091b27;
+  color: #d0ad63;
   box-shadow: 10px 10px 20px #333, -10px -10px 20px #333;
   z-index: 100;
   text-align: center;
-  display: none; /*comment*/
+  /* display: none; */
 }
 
 .popup .image img {
@@ -119,7 +124,7 @@ form input {
 .popup .box {
   width: fit-content;
   padding: 5px;
-  border: 2px solid #D0AD63;
+  border: 2px solid #d0ad63;
   margin: auto;
 }
 
@@ -132,8 +137,8 @@ form input {
   height: 20px;
   border-radius: 50%;
   font-size: 20px;
-  background-color: #D0AD63;
-  color: #091B27;
+  background-color: #d0ad63;
+  color: #091b27;
   position: absolute;
   right: 10px;
   top: 10px;
