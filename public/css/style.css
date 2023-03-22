@@ -41,9 +41,9 @@ header .logo img {
   height: 60px;
 }
 
-.content .image {
+body {
   width: 100vw;
-  height: 180px;
+  height: 100%;
   background-image: url("../img/backg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
