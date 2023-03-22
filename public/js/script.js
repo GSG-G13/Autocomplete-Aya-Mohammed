@@ -1,10 +1,12 @@
+let champion = document.getElementById("champion");
+
 let url =
   "http://ddragon.leagueoflegends.com/cdn/12.5.1/data/en_US/champion.json";
 
-let handelDOM = (data) => {
-  data.forEach((item) => {
-    DOMElement(item);
-  });
-};
-
-httpRequest(url, handelDOM);
+champion.addEventListener("keyup", (e) => {
+  list.innerHTML = "";
+  if (e.target.value === "") {
+    return;
+  }
+  httpRequest(`/search?q=${e.target.value}`, DOMElement);
+});
